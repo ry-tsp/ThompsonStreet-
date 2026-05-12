@@ -108,6 +108,18 @@ ul, ol   { list-style: none; }
   width: 100%;
   height: auto;
 }
+/* Texture variant: full-page brush-stroke mist (home page only) */
+.bg-watermark--texture {
+  top: 0;
+  left: 0;
+  transform: none;
+  width: 100vw;
+  height: 100vh;
+}
+.bg-watermark--texture svg {
+  width: 100%;
+  height: 100%;
+}
 
 /* ── Navigation ── */
 .site-nav {
