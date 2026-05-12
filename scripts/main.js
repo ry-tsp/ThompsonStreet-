@@ -2,10 +2,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // ── 1. Background watermark fade-in (both pages) ─────────────────────
   const watermark = document.querySelector('.bg-watermark');
   if (watermark) {
-    // Brush-stroke mist texture (home page only)
-    const isHome = document.getElementById('who-we-are')
-                && !document.querySelector('.team-main');
-    if (isHome) {
+    // Brush-stroke mist texture (home + team pages)
+    const isHome = !!document.getElementById('who-we-are');
+    const isTeam = !!document.querySelector('.team-main');
+    if (isHome || isTeam) {
       const SVG_NS = 'http://www.w3.org/2000/svg';
       const svg = document.createElementNS(SVG_NS, 'svg');
       svg.setAttribute('viewBox', '0 0 1000 1600');
