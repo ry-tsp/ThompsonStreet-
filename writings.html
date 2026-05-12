@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Writings — Thompson Street Co.</title>
+  <meta name="description" content="Research, analysis, and commentary from Thompson Street.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Courier+Prime:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+<div class="bg-watermark" aria-hidden="true"></div>
+
+<nav class="site-nav" role="navigation" aria-label="Main navigation">
+  <div class="grid-container">
+    <div class="nav-inner">
+      <span class="nav-wordmark">Thompson Street</span>
+      <div class="nav-links">
+        <a href="index.html"    class="nav-link">Home</a>
+        <span class="nav-sep" aria-hidden="true">/</span>
+        <a href="team.html"     class="nav-link">Team</a>
+        <span class="nav-sep" aria-hidden="true">/</span>
+        <a href="writings.html" class="nav-link active">Writings</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<header class="writings-header">
+  <div class="grid-container">
+    <div class="writings-header-inner">
+      <h1 class="writings-title">Writings</h1>
+      <p class="writings-subtitle">Research, analysis, and commentary from Thompson Street.</p>
+    </div>
+  </div>
+</header>
+
+<div class="writings-filters-bar" role="navigation" aria-label="Filter writings by category">
+  <div class="grid-container">
+    <div class="filters-inner">
+      <button class="filter-btn active" data-filter="all"      type="button">All</button>
+      <button class="filter-btn"        data-filter="policy"   type="button">Policy</button>
+      <button class="filter-btn"        data-filter="crypto"   type="button">Crypto</button>
+      <button class="filter-btn"        data-filter="markets"  type="button">Markets</button>
+      <button class="filter-btn"        data-filter="research" type="button">Research</button>
+    </div>
+  </div>
+</div>
+
+<section class="writings-grid-section">
+  <div class="grid-container">
+    <div class="writings-grid">
+
+      <article class="writing-card" data-category="policy">
+        <div class="card-meta">
+          <span class="card-tag">Policy</span>
+          <span class="card-date">March 2025</span>
+        </div>
+        <h2 class="card-title">TradFi Tomorrow: What Traditional Finance Gets Wrong About Crypto</h2>
+        <p class="card-excerpt">The financial establishment has spent years misreading the crypto industry — mistaking noise for signal, and dismissing genuine technical development. Here is a better map.</p>
+        <a href="#" class="card-read-link">Read →</a>
+      </article>
+
+      <article class="writing-card" data-category="policy">
+        <div class="card-meta">
+          <span class="card-tag">Policy</span>
+          <span class="card-date">January 2025</span>
+        </div>
+        <h2 class="card-title">FRB Master Accounts: What the Policy Actually Says and Why It Matters</h2>
+        <p class="card-excerpt">The Federal Reserve's account access framework has become one of the most consequential — and least understood — policy battlegrounds in banking and payments. A close reading.</p>
+        <a href="#" class="card-read-link">Read →</a>
+      </article>
+
+      <article class="writing-card" data-category="crypto">
+        <div class="card-meta">
+          <span class="card-tag">Crypto</span>
+          <span class="card-date">November 2024</span>
+        </div>
+        <h2 class="card-title">The Stablecoin Landscape: A Structural Overview</h2>
+        <p class="card-excerpt">Stablecoins are not a monolith. Understanding the structural differences — fiat-backed, algorithmic, tokenized deposits — is prerequisite to any serious policy or investment view.</p>
+        <a href="#" class="card-read-link">Read →</a>
+      </article>
+
+      <article class="writing-card" data-category="markets">
+        <div class="card-meta">
+          <span class="card-tag">Markets</span>
+          <span class="card-date">September 2024</span>
+        </div>
+        <h2 class="card-title">Crypto Market Microstructure: What Has Changed Since FTX</h2>
+        <p class="card-excerpt">The collapse of FTX reorganized the competitive landscape for crypto market-making and exchange infrastructure. The new structure has implications for both liquidity and regulation.</p>
+        <a href="#" class="card-read-link">Read →</a>
+      </article>
+
+      <article class="writing-card" data-category="research">
+        <div class="card-meta">
+          <span class="card-tag">Research</span>
+          <span class="card-date">July 2024</span>
+        </div>
+        <h2 class="card-title">Municipal Bonds and Tokenization: The Gap Between Promise and Reality</h2>
+        <p class="card-excerpt">The municipal bond market is a genuine candidate for blockchain-based infrastructure. But the path from proof-of-concept to production involves obstacles the technology alone cannot solve.</p>
+        <a href="#" class="card-read-link">Read →</a>
+      </article>
+
+      <article class="writing-card" data-category="policy">
+        <div class="card-meta">
+          <span class="card-tag">Policy</span>
+          <span class="card-date">May 2024</span>
+        </div>
+        <h2 class="card-title">When Founders Should (and Should Not) Care About Policy</h2>
+        <p class="card-excerpt">The conventional wisdom about startup engagement with Washington is wrong in both directions. Most founders do too much; a few do too little. A framework for thinking clearly about this.</p>
+        <a href="#" class="card-read-link">Read →</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="grid-container footer-main-row">
+    <div class="footer-identity">
+      <span class="footer-name">Thompson Street</span>
+    </div>
+    <div class="footer-contact">
+      <a href="mailto:hello@thompsonstreet.co" class="footer-email">hello@thompsonstreet.co</a>
+    </div>
+    <div class="footer-social">
+      <a href="https://x.com/thompsonstreetco" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Thompson Street on X">
+        <svg width="17" height="17" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L2.25 2.25h7.02l4.262 5.636 4.712-5.636zm-1.161 17.52h1.833L7.084 4.126H5.117z" fill="currentColor"/></svg>
+      </a>
+      <a href="https://thompsonstreet.substack.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Thompson Street on Substack">
+        <svg width="17" height="17" viewBox="0 0 24 24" aria-hidden="true"><path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z" fill="currentColor"/></svg>
+      </a>
+      <a href="https://linkedin.com/company/thompsonstreetco" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Thompson Street on LinkedIn">
+        <svg width="17" height="17" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" fill="currentColor"/></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script src="scripts/main.js"></script>
+</body>
+</html>
