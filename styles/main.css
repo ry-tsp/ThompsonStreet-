@@ -398,11 +398,11 @@ ul, ol   { list-style: none; }
 }
 .footer-main-row {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   padding: 28px 0 36px;
   border-top: 0.5px solid currentColor;
-  gap: 16px;
+  gap: 0;
 }
 .footer-identity {
   justify-self: start;
@@ -413,6 +413,16 @@ ul, ol   { list-style: none; }
   font-size: 14px;
   letter-spacing: 0.06em;
   opacity: 0.55;
+  display: block;
+}
+.footer-cities {
+  font-family: 'Courier Prime', monospace;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0.45;
+  justify-self: center;
+  text-align: center;
   display: block;
 }
 .footer-email-wrap {
@@ -446,13 +456,14 @@ ul, ol   { list-style: none; }
 }
 .display-statement {
   font-family: 'Courier Prime', monospace;
-  font-size: clamp(15px, 2vw, 18px);
+  font-size: clamp(16px, 2.2vw, 22px);
   font-weight: 400;
   font-style: normal;
   line-height: 1.5;
   letter-spacing: 0.01em;
   margin-bottom: 36px;
   color: inherit;
+  display: block;
 }
 .zone-label {
   display: flex;
@@ -498,36 +509,60 @@ ul, ol   { list-style: none; }
 
 @media (max-width: 768px) {
   .footer-main-row {
-    grid-template-columns: 1fr;
-    gap: 12px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 16px;
     padding: 24px 0 32px;
   }
   .footer-identity {
+    grid-column: 1;
+    grid-row: 1;
     justify-self: start;
+  }
+  .footer-cities {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: end;
+    text-align: right;
   }
   .footer-email-wrap {
+    grid-column: 1 / -1;
+    grid-row: 2;
     justify-self: start;
   }
-  .cred-item {
-    flex: 1 1 33%;
-  }
   .display-statement {
-    font-size: clamp(14px, 3.5vw, 17px);
+    font-size: clamp(15px, 3.5vw, 20px);
   }
 }
 
 @media (max-width: 480px) {
+  .footer-main-row {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 12px;
+    padding: 20px 0 28px;
+  }
+  .footer-identity {
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: start;
+  }
+  .footer-cities {
+    grid-column: 1;
+    grid-row: 2;
+    justify-self: start;
+    text-align: left;
+  }
+  .footer-email-wrap {
+    grid-column: 1;
+    grid-row: 3;
+    justify-self: start;
+  }
   .firm-name {
     font-size: clamp(30px, 8vw, 46px);
   }
   .display-statement {
-    font-size: 14px;
-  }
-  .cred-item {
-    flex: 1 1 50%;
-  }
-  .footer-main-row {
-    padding: 20px 0 28px;
+    font-size: 15px;
   }
 }
 
