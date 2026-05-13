@@ -457,7 +457,7 @@ ul, ol   { list-style: none; }
 .display-statement {
   font-family: 'Courier Prime', monospace;
   font-size: clamp(16px, 2.2vw, 22px);
-  font-weight: 400;
+  font-weight: 700;
   font-style: normal;
   line-height: 1.5;
   letter-spacing: 0.01em;
@@ -513,22 +513,23 @@ ul, ol   { list-style: none; }
     grid-template-rows: auto auto auto;
     gap: 6px;
     padding: 24px 0 32px;
+    text-align: center;
   }
   .footer-identity {
     grid-column: 1;
     grid-row: 1;
-    justify-self: start;
+    justify-self: center;
   }
   .footer-cities {
     grid-column: 1;
     grid-row: 2;
-    justify-self: start;
-    text-align: left;
+    justify-self: center;
+    text-align: center;
   }
   .footer-email-wrap {
     grid-column: 1;
     grid-row: 3;
-    justify-self: start;
+    justify-self: center;
   }
   .display-statement {
     font-size: clamp(15px, 3.5vw, 20px);
