@@ -459,7 +459,7 @@ ul, ol   { list-style: none; }
 .display-statement {
   font-family: 'Courier Prime', monospace;
   font-size: clamp(16px, 2.2vw, 22px);
-  font-weight: 700;
+  font-weight: 400;
   font-style: normal;
   line-height: 1.5;
   letter-spacing: 0.01em;
