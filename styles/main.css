@@ -447,6 +447,7 @@ ul, ol   { list-style: none; }
 /* ── Home page content blocks ── */
 #who-we-are .section-label { display: none; }
 #who-we-are .section { display: block; }
+#who-we-are { padding-top: 14px; }
 #who-we-are .section-body {
   width: 100%;
   max-width: 680px;
