@@ -402,7 +402,7 @@ ul, ol   { list-style: none; }
   align-items: center;
   padding: 28px 0 36px;
   border-top: 0.5px solid currentColor;
-  gap: 0;
+  gap: 24px;
 }
 .footer-identity {
   justify-self: start;
@@ -509,38 +509,10 @@ ul, ol   { list-style: none; }
 
 @media (max-width: 768px) {
   .footer-main-row {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    gap: 16px;
-    padding: 24px 0 32px;
-  }
-  .footer-identity {
-    grid-column: 1;
-    grid-row: 1;
-    justify-self: start;
-  }
-  .footer-cities {
-    grid-column: 2;
-    grid-row: 1;
-    justify-self: end;
-    text-align: right;
-  }
-  .footer-email-wrap {
-    grid-column: 1 / -1;
-    grid-row: 2;
-    justify-self: start;
-  }
-  .display-statement {
-    font-size: clamp(15px, 3.5vw, 20px);
-  }
-}
-
-@media (max-width: 480px) {
-  .footer-main-row {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
-    gap: 12px;
-    padding: 20px 0 28px;
+    gap: 6px;
+    padding: 24px 0 32px;
   }
   .footer-identity {
     grid-column: 1;
@@ -557,6 +529,16 @@ ul, ol   { list-style: none; }
     grid-column: 1;
     grid-row: 3;
     justify-self: start;
+  }
+  .display-statement {
+    font-size: clamp(15px, 3.5vw, 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-main-row {
+    gap: 4px;
+    padding: 20px 0 28px;
   }
   .firm-name {
     font-size: clamp(30px, 8vw, 46px);
