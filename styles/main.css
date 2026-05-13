@@ -136,7 +136,7 @@ ul, ol   { list-style: none; }
   grid-column: 1 / -1;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 .nav-wordmark {
   font-family: 'Cormorant Garamond', serif;
@@ -462,7 +462,7 @@ ul, ol   { list-style: none; }
   font-style: normal;
   line-height: 1.5;
   letter-spacing: 0.01em;
-  margin-bottom: 36px;
+  margin-bottom: var(--sp-3);
   color: inherit;
   display: block;
 }
